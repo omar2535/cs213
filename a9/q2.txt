@@ -1,0 +1,44 @@
+time ./aRead 10
+207
+real	0m0.015s
+user	0m0.013s
+sys	0m0.000s
+
+time ./sRead 10
+207
+real	0m0.113s
+user	0m0.108s
+sys	0m0.004s
+
+
+time ./aRead 100
+1644
+real	0m0.015s
+user	0m0.014s
+sys	0m0.000s
+
+time ./sRead 100
+1644
+real	0m1.101s
+user	0m1.096s
+sys	0m0.004s
+
+
+time ./aRead 1000
+16193
+real	0m0.016s
+user	0m0.008s
+sys	0m0.008s
+
+time ./sRead 1000
+16193
+real	0m10.981s
+user	0m10.889s
+sys	0m0.056s
+
+Explanation: 
+aRead is faster than sRead because when the read is performed, 
+we do not have to wait for the result to come back before calling 
+the next iteration of the for loop, thus the result can be gathered
+after all the reads are done processing. Instead of having the first
+read blocking the next read as seen in sRead.

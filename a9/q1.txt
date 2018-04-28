@@ -1,0 +1,19 @@
+time ./sRead 10
+207
+real	0m0.113s
+user	0m0.112s
+sys	0m0.000s
+
+time ./sRead 100
+1644
+real	0m1.103s
+user	0m1.098s
+sys	0m0.004s
+
+time ./sRead 1000
+16193
+real	0m11.326s
+user	0m10.965s
+sys	0m0.004s
+
+explanation: this is a syncrhonous program that will loop until is_read_pending ==0, and while is_read_pending ==1, it keeps reading from the file. And as the size of the block increases, the time will also increase because of the for loop 
