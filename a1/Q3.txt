@@ -1,0 +1,3 @@
+0xAEFFFFAE
+
+In general, any integer who's hex format is the same when read fowards or backwards. 

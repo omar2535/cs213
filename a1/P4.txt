@@ -1,0 +1,90 @@
+java Endianness FA AB CD EF
+Memory Contents
+  Addr   Value
+    0:   0xfa
+    1:   0xab
+    2:   0xcd
+    3:   0xef
+The big    endian integer value at address 0 is -89403921
+The little endian integer value at address 0 is -271733766
+
+java Endianness 12 34 56 78
+Memory Contents
+  Addr   Value
+    0:   0x12
+    1:   0x34
+    2:   0x56
+    3:   0x78
+The big    endian integer value at address 0 is 305419896
+The little endian integer value at address 0 is 2018915346
+
+java Endianness 00 00 00 00
+Memory Contents
+  Addr   Value
+    0:   0x0
+    1:   0x0
+    2:   0x0
+    3:   0x0
+The big    endian integer value at address 0 is 0
+The little endian integer value at address 0 is 0
+
+ java Endianness 80 80 80 80
+Memory Contents
+  Addr   Value
+    0:   0x80
+    1:   0x80
+    2:   0x80
+    3:   0x80
+The big    endian integer value at address 0 is -2139062144
+The little endian integer value at address 0 is -2139062144
+
+java Endianness FF FF FF FF
+Memory Contents
+  Addr   Value
+    0:   0xff
+    1:   0xff
+    2:   0xff
+    3:   0xff
+The big    endian integer value at address 0 is -1
+The little endian integer value at address 0 is -1
+
+java Endianness 10 00 00 00
+Memory Contents
+  Addr   Value
+    0:   0x10
+    1:   0x0
+    2:   0x0
+    3:   0x0
+The big    endian integer value at address 0 is 268435456
+The little endian integer value at address 0 is 16
+
+00 00 00 01
+Memory Contents
+  Addr   Value
+    0:   0x0
+    1:   0x0
+    2:   0x0
+    3:   0x1
+The big    endian integer value at address 0 is 1
+The little endian integer value at address 0 is 16777216
+
+java Endianness F0 00 00 00
+Memory Contents
+  Addr   Value
+    0:   0xf0
+    1:   0x0
+    2:   0x0
+    3:   0x0
+The big    endian integer value at address 0 is -268435456
+The little endian integer value at address 0 is 240
+
+java Endianness 00 00 00 F0
+Memory Contents
+  Addr   Value
+    0:   0x0
+    1:   0x0
+    2:   0x0
+    3:   0xf0
+The big    endian integer value at address 0 is 240
+The little endian integer value at address 0 is -268435456
+

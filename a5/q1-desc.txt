@@ -1,0 +1,17 @@
+Lines that read from mem: 8
+ld    (r0), r0         
+ld    (r1), r1          # r1 = value of a = address of d0 
+ld    (r1), r1          # r1 = value of d0
+ld   
+(r1, r0, 4), r2         # r2 = d1[0]
+ld    (r1, r0, 4), r2   # r2 = a.b->y[0]
+ld    20(r1), r1        # 
+ld    (r1, r0, 4), r2   #
+ld    (r1, r0, 4), r2   #
+
+Lines that store: 5
+st    r2, (r3)          # store value of r3 to r2
+st    r2, (r3)          # store a.b->y[0] into value of r3
+st    r2, (r3)          # store r2 into r3
+st    r1, 20(r1)        # d0[5] = d0[0]
+st    r2, (r3)          # store r2, r3

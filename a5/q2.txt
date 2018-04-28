@@ -1,0 +1,1 @@
+the bug is with the free which free's the the variable "e" toooooooo early. 

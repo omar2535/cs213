@@ -1,0 +1,1 @@
+list_delete will use n = e->next, but we delete "e" inside the for loop of list_delete causing a dangling pointer since n = e->next;
